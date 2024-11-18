@@ -30,7 +30,5 @@ const renderListElement = (elementData) => {
 fetch("./data.json")
   .then((req) => req.json())
   .then((data) => {
-    console.log(data);
-
     data.forEach(d => renderListElement(d));
   });
