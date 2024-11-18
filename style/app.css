@@ -68,6 +68,7 @@ a {
     border-radius: 32px;
     width: 50%;
     padding: 38px 0 46px;
+    box-shadow: none;
   }
 }
 .header__title {
@@ -256,5 +257,6 @@ a {
     flex-direction: row;
     height: auto;
     border-radius: 32px;
+    box-shadow: 0 30px 60px 0 rgba(17, 37, 214, 0.15);
   }
 }/*# sourceMappingURL=app.css.map */
