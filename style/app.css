@@ -21,6 +21,9 @@ body {
   font-weight: 400;
   color: #303b59;
   background: #ecf2ff;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;

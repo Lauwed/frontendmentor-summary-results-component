@@ -19,12 +19,13 @@ body {
   color: $dark-navy;
 
   background: $lighter-blue;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    min-height: 100vh;
 }
 
 ul {
