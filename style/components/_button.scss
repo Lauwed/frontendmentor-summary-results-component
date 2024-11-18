@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    padding: 16px;
+    
+    background-color: $dark-navy;
+    color: $white;
+
+    font-weight: 700;
+    font-size: px-to-rem(18);
+    border-radius: 128px;
+
+    text-align: center;
+
+    &:hover, &:focus {
+        background: $gradient-1;
+    }
+}

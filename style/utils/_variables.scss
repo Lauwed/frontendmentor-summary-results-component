@@ -1,0 +1,29 @@
+// COLORS
+$yellow: #ffb21e;
+$yellow-light: rgba($yellow, 0.05);
+
+$blue: #1125d6;
+$blue-light: rgba($blue, 0.05);
+
+$green: #00bb8f;
+$green-light: rgba($green, 0.05);
+
+$red: #ff5555;
+$red-light: rgba($red, 0.05);
+
+$dark-navy: #303b59;
+$light-blue: #cac9ff;
+$lighter-blue: #ecf2ff;
+$purple: #6943FF;
+$white: #fff;
+
+$gradient-1: linear-gradient($purple, #2F2CE9);
+$gradient-2: linear-gradient(#4D21C9, rgba($blue, 0));
+
+// BREAKPOINTS
+$w-tablet: 768px;
+$w-desktop: 1440px;
+
+// FONT SIZE
+$root-font-size-mobile: 16;
+$root-font-size-desktop: 18;

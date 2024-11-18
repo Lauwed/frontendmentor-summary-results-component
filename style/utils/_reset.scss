@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    @include desktop {
+        font-size: $root-font-size-desktop * 1px;
+    }
+}
+
+body {
+  margin: 0;
+
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $dark-navy;
+
+  background: $lighter-blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

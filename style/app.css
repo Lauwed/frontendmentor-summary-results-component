@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #303b59;
+  background: #ecf2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header {
+  background: linear-gradient(#6943FF, #2F2CE9);
+  box-shadow: 0 30px 60px 0 rgba(17, 37, 214, 0.15);
+  border-radius: 0 0 32px 32px;
+  padding: 24px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    border-radius: 32px;
+    width: 50%;
+    padding: 38px 0 46px;
+  }
+}
+.header__title {
+  font-size: 1.125rem;
+  margin: 0 0 24px;
+  color: #cac9ff;
+}
+@media screen and (min-width: 1440px) {
+  .header__title {
+    font-size: 1.3333333333rem;
+    margin-bottom: 35px;
+  }
+}
+.header__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 8.75rem;
+  aspect-ratio: 1/1;
+  background: linear-gradient(#4D21C9, rgba(17, 37, 214, 0));
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .header__score {
+    width: 11.1111111111rem;
+    margin-bottom: 28px;
+  }
+}
+.header__score span:first-child {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+}
+@media screen and (min-width: 1440px) {
+  .header__score span:first-child {
+    font-size: 4rem;
+  }
+}
+.header__score span:nth-child(2) {
+  font-weight: 700;
+  color: #cac9ff;
+  opacity: 50%;
+}
+.header__grade {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1440px) {
+  .header__grade {
+    font-size: 1.7777777778rem;
+  }
+}
+.header__description {
+  max-width: 260px;
+  color: #cac9ff;
+}
+@media screen and (min-width: 1440px) {
+  .header__description {
+    text-align: center;
+  }
+}
+
+.main {
+  padding: 24px 30px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    padding: 38px 40px 46px;
+    gap: 40px;
+  }
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .summary {
+    gap: 28px;
+    flex: 1;
+  }
+}
+.summary__title {
+  font-size: 1.125rem;
+  color: #303b59;
+  margin: 0;
+}
+@media screen and (min-width: 1440px) {
+  .summary__title {
+    font-size: 1.3333333333rem;
+  }
+}
+.summary__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.summary__element {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 12px;
+}
+.summary__element h3 {
+  margin: 0;
+  flex: 1;
+  font-weight: 400;
+}
+.summary__element p {
+  font-weight: 700;
+}
+.summary__element p span {
+  opacity: 0.5;
+}
+.summary__element--Reaction {
+  background: rgba(255, 85, 85, 0.05);
+}
+.summary__element--Reaction svg path {
+  stroke: #ff5555;
+}
+.summary__element--Reaction h3 {
+  color: #ff5555;
+}
+.summary__element--Memory {
+  background: rgba(255, 178, 30, 0.05);
+}
+.summary__element--Memory svg path {
+  stroke: #ffb21e;
+}
+.summary__element--Memory h3 {
+  color: #ffb21e;
+}
+.summary__element--Verbal {
+  background: rgba(0, 187, 143, 0.05);
+}
+.summary__element--Verbal svg path {
+  stroke: #00bb8f;
+}
+.summary__element--Verbal h3 {
+  color: #00bb8f;
+}
+.summary__element--Visual {
+  background: rgba(17, 37, 214, 0.05);
+}
+.summary__element--Visual svg path {
+  stroke: #1125d6;
+}
+.summary__element--Visual h3 {
+  color: #1125d6;
+}
+
+.button {
+  display: block;
+  padding: 16px;
+  background-color: #303b59;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 128px;
+  text-align: center;
+}
+.button:hover, .button:focus {
+  background: linear-gradient(#6943FF, #2F2CE9);
+}
+
+.article {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (min-width: 1440px) {
+  .article {
+    max-width: 736px;
+    flex-direction: row;
+    height: auto;
+    border-radius: 32px;
+  }
+}/*# sourceMappingURL=app.css.map */

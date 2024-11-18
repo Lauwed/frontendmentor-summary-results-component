@@ -1,0 +1,85 @@
+.header {
+    background: $gradient-1;
+    box-shadow: 0 30px 60px 0 rgba($blue, 0.15);
+
+    border-radius: 0 0 32px 32px;
+    padding: 24px 0 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: $white;
+
+    @include desktop {
+        border-radius: 32px;
+        width: 50%;
+        padding: 38px 0 46px;
+    }
+
+    &__title {
+        font-size: px-to-rem(18);
+        margin: 0 0 24px;
+        color: $light-blue;
+
+        @include desktop {
+            font-size: px-to-rem(24, 18);
+            margin-bottom: 35px;
+        }
+    }
+
+    &__score {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: px-to-rem(140);
+        aspect-ratio: 1/1;
+        background: $gradient-2;
+
+        border-radius: 50%;
+        margin-bottom: 24px;
+
+        @include desktop {
+            width: px-to-rem(200, 18);
+            margin-bottom: 28px;
+        }
+
+        span {
+            &:first-child {
+                font-size: px-to-rem(56);
+                font-weight: 800;
+                line-height: px-to-rem(72);
+
+                @include desktop {
+                    font-size: px-to-rem(72, 18);
+                }
+            }
+            &:nth-child(2) {
+                font-weight: 700;
+                color: $light-blue;
+                opacity: 50%;
+            }
+        }
+    }
+
+    &__grade {
+        font-size: px-to-rem(24);
+        font-weight: 700;
+        margin-bottom: 8px;
+
+        @include desktop {
+            font-size: px-to-rem(32, 18);
+        }
+    }
+
+    &__description {
+        max-width: 260px;
+        color: $light-blue;
+
+        @include desktop {
+            text-align: center;
+        }
+    }
+}

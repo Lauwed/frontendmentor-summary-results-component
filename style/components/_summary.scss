@@ -1,0 +1,84 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include desktop {
+        gap: 28px;
+        flex: 1;
+    }
+
+    &__title {
+        font-size: px-to-rem(18);
+        color: $dark-navy;
+        margin: 0;
+
+        @include desktop {
+            font-size: px-to-rem(24, 18);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__element {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 18px;
+        border-radius: 12px;
+
+        h3 {
+            margin: 0;
+            flex: 1;
+            font-weight: 400;
+        }
+
+        p {
+            font-weight: 700;
+            span {
+                opacity: 0.5;
+            }
+        }
+
+        &--Reaction {
+            background: $red-light;
+            svg path {
+                stroke: $red;
+            }
+            h3 {
+                color: $red;
+            }
+        }
+        &--Memory {
+            background: $yellow-light;
+            svg path {
+                stroke: $yellow;
+            }
+            h3 {
+                color: $yellow;
+            }
+        }
+        &--Verbal {
+            background: $green-light;
+            svg path {
+                stroke: $green;
+            }
+            h3 {
+                color: $green;
+            }
+        }
+        &--Visual {
+            background: $blue-light;
+            svg path {
+                stroke: $blue;
+            }
+            h3 {
+                color: $blue;
+            }
+        }
+    }
+}
