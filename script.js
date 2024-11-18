@@ -27,7 +27,7 @@ const renderListElement = (elementData) => {
     summaryList.appendChild(li);
 }
 
-fetch("/data.json")
+fetch("./data.json")
   .then((req) => req.json())
   .then((data) => {
     console.log(data);
